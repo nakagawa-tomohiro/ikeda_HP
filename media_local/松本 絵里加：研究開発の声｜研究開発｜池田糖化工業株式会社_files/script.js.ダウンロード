@@ -1,0 +1,107 @@
+$(function(){
+var elem = $('.topTopics').find('li');
+  if(elem.length == 0){
+    $('.topTopics').hide();
+  }else{
+  }
+});
+/* 分岐 */
+$(function(){
+var windowWidth = $(window).width();
+var windowSm = 767;
+if (windowWidth <= windowSm) {
+   $('body').addClass('sp');
+} else {
+   $('body').addClass('pc');
+}
+    var timer = false;
+$(window).resize(function() {
+    if (timer !== false) {
+        clearTimeout(timer);
+    }
+    timer = setTimeout(function() {
+      if(window.matchMedia("(max-width:767px)").matches){
+          $('body').addClass('sp');
+          $('body').removeClass('pc');
+      }else{
+          $('body').addClass('pc');
+          $('body').removeClass('sp');
+      }
+    }, 200);
+});
+});
+
+/* SP メニュー */
+$(function() {
+	var $header = $('#header');
+	$('.toggleBtn').click(function(){
+		$header.toggleClass('open');
+	});
+});
+
+/* ページトップボタン */
+$(function(){
+       $('.pageTop a').click(function () {
+           $('body, html').animate({ scrollTop: 0 }, 500);
+              return false;
+   });
+});
+
+
+/* トップページスライダー & カルーセル */
+$(function() {
+	if($('.topSlider ul').length){
+    $('.topSlider ul').slick({
+		autoplay: true,
+		dots: false,
+		speed: 1500,
+		fade: true,
+		cssEase: 'linear',
+		arrows: false
+	});
+	}
+	if($('.pc .topInfo ul').length){
+    $('.pc .topInfo ul').slick({
+		slidesToShow: 2,
+  slidesToScroll: 1
+	});
+	}
+	if($('.sp .topInfo ul').length){
+    $('.sp .topInfo ul').slick({
+	});
+	}
+});
+
+/* 業務用素材検索 カテゴリー選択1 */
+$(function(){
+	$('.product_cat_2').hide();
+    $("#current_list").show();
+	var href = location.href.split("/");
+	var tabname2 = href[href.length -3];
+	var tabno = $('.product_cat_1 li.' + tabname2).index();
+    $('.product_cat_2').eq(tabno).show(1);
+	$('.product_cat_1 li').eq(tabno).addClass('current');
+});
+
+$(function(){
+    //画像が無い場合にイベント発火
+    $('img').error(function() {
+        //該当の要素を削除する
+        $(this).remove();
+    });
+});
+
+
+/* アンカーリンク */
+$(window).on('load', function() {
+    var url = $(location).attr('href');
+    if(url.indexOf("?id=") != -1){
+        var id = url.split("?id=");
+        var $target = $('#' + id[id.length - 1]);
+        if($target.length){
+            var pos = $target.offset().top;
+            $("html, body").animate({scrollTop:pos}, 1000);
+        }
+    }
+});
+

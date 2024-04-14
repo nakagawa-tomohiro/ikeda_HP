@@ -1,0 +1,340 @@
+@charset "utf-8";
+#main:not(.level2) > article {
+	padding-top: 0;
+}
+/* ================ 
+
+privacy policy
+
+================ */
+.ol_num li {
+	padding-left: 1.5em;
+    text-indent: -1.5em;
+	line-height: 1.75;
+}
+.ol_num li::before {
+	counter-increment:ol_num;
+	content:counter(ol_num) "）";
+}
+.secTitle {counter-reset:ol_num;}
+
+@media screen and (min-width:768px) {
+.ol_num {
+	margin-bottom: 35px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.ol_num {
+	margin-bottom: 2em;
+}
+
+}
+
+/* ================ 
+
+sitemap
+
+================ */
+.page_sitemap a {
+	text-decoration:none;
+}
+.page_sitemap a:hover {
+	text-decoration:underline;
+}
+.page_sitemap .subTitle {
+	margin-bottom:10px;
+}
+.page_sitemap .subTitle a {
+	color: #699e2b;
+}
+.page_sitemap .ul_arrow li {
+	list-style:none;
+	background:url(../common/img/ul_arrow.png) left 0.2em no-repeat;
+	padding-left:14px;
+}
+
+@media screen and (min-width:768px) {
+.col3.page_sitemap > div {
+	margin-bottom:40px;
+}
+.page_sitemap .ul_arrow li {
+	margin-bottom:20px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.col3.page_sitemap > div {
+	margin-bottom:3rem;
+}
+.page_sitemap .ul_arrow li {
+	margin-bottom:1rem;
+	background-size:6px 8px;
+	padding-left:1.2rem;
+}
+}
+
+.maillist{
+    margin-bottom: 16px;
+}
+.maillist li{
+}
+
+.maillist li a{
+    display: block;
+    transition: all 0.2s linear;
+    border-bottom: 1px solid #9F9F9F;
+    padding: 16px 0;
+}
+
+.maillist li a:hover{
+    opacity: 0.7;
+}
+
+.maillist li:first-child a{
+    padding-top: 0;
+}
+.maillist li a::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.maillist li figure{
+    float: left;
+    margin: 0;
+    width: 40%;
+}
+.maillist li figure img{
+    width: 100%;
+    height: auto;
+}
+.maillist li .maillistTitle{
+    color: #699e2b;
+    font-size: 2.0rem;
+    float: left;
+    margin: 8px 0 8px 0;
+    width: 56%;
+    padding: 0 0 0 4%;
+    line-height: 1.45;
+}
+.maillist li .maillistBody{
+    float: left;
+    margin: 16px 0 0 0;
+    width: 100%;
+}
+.maillist li .maillistBody .update{
+    display: block;
+    width: 100%;
+    color: #707070;
+    font-size: 12px;
+    margin: 12px 0 0 0;
+}
+    
+@media screen and (min-width:1024px){
+    .maillist li{
+    }
+    .maillist li a{
+        padding: 24px 0;
+    }
+    .maillist li figure{
+        width: 276px;
+    }
+    .maillist li .maillistTitle{
+        width: 480px;
+        margin: 10px 0 16px 0;
+        font-size: 20px;
+        line-height: 1.4;
+        padding: 0 0 0 24px;
+    }
+    .maillist li .maillistBody{
+        padding: 0 0 0 24px;
+        margin: 0 0 0 0;
+        width: 480px;
+    }
+    .maillist li .maillistBody .update{
+        font-size: 14px;
+        margin: 16px 0 0 0;
+    }
+}
+@media screen and (min-width:1440px){
+    .maillist li figure{
+        width: 276px;
+    }
+    .maillist li .maillistTitle{
+        width: 720px;
+     }
+    .maillist li .maillistBody{
+        width: 720px;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .maillist li figure{
+        width: 276px;
+    }
+    .maillist li .maillistTitle{
+        width: 840px;
+     }
+    .maillist li .maillistBody{
+        width: 840px;
+    }
+}
+#mail .contWrap img {
+    width: 100%;
+    height: auto;
+}
+#mail .contWrap p {
+    margin-bottom: 15px;
+}
+
+#mail .contWrap p br{
+    display: none;
+}
+
+#mail .contWrap{
+    font-size: 15px;
+    max-width: 600px;
+}
+#mail h1 small{
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+#mail .read{}
+#mail .btnArea{
+    padding: 12px 0
+}
+#mail .btnStyle{
+    width: 100%;
+    color: rgb(255, 255, 255); 
+    text-decoration: none; 
+    text-align: center;
+    font-weight: 700; 
+    font-size: 14px; 
+    display: block;
+    padding: 14px;
+    margin: 0 auto 10px auto;
+    box-sizing: border-box;
+}
+#mail .btnType01{
+    background-color: #83c636;
+}
+#mail .btnType02{
+    background-color: #eec362;
+}
+
+#mail .contWrap > h2{
+    display: flex;
+    align-items: center;
+    line-height: 1.3; 
+    border-top: none; 
+    border-right: none; 
+    border-image: initial; 
+    font-weight: 700; 
+    font-size: 18px; 
+    color: rgb(51, 51, 51); 
+    margin: 20px 0 20px 0; 
+    padding: 0; 
+    text-align: left;
+}
+
+#mail .contWrap > h2::before{
+    width:5px;
+    height: 56px;
+    content: '';
+    background-color: #83c636;
+    margin-right: 14px;
+}
+
+#mail h3{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#mail .flexBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#mail .flexBox .photo{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#mail .flexBox .text{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0 0;
+}
+
+#mail .flexBox .text p{
+    line-height: 1.5;
+}
+
+#mail .sampleOrder .title{
+    line-height: 1.3; border: none; font-weight: 700; background-color: #83c636; color: #fff; padding: 5px 0px 5px 15px; font-size: 18px; margin: 20px 0; mso-line-height-rule:exactly;
+}
+
+#mail .sampleOrder .item {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#mail .contact .title{
+    line-height: 1.3; border: none; font-weight: 700; background-color: #5c5a5a; color: #fff; padding: 5px 0px 5px 15px; font-size: 18px; margin: 20px 0; mso-line-height-rule:exactly;
+}
+
+#mail .contactBox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+} 
+
+#mail .contactBox .photo{
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+}
+
+#mail .contactBox .photo img{
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+#mail .contactBox .text a{
+    display: block;
+    margin: 8px 0;
+}
+
+@media screen and (min-width:768px) {
+    #mail .contWrap p br{
+        display: block;
+    }
+    #mail .btnStyle{
+        width: 380px;
+    }
+    #mail .flexBox .photo{
+        width: 240px;
+    }
+
+    #mail .flexBox .text{
+        width: 346px;
+    }
+    #mail .contactBox{
+        justify-content:flex-start;
+    } 
+    
+    #mail .contactBox .photo{
+        width: 308px;
+        padding-left: 40px;
+        text-align: left;
+    }
+
+    #mail .contactBox .photo img{
+        width: 120px;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,433 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width: 1023px) {
+.gNav a[href^="/research/"] + ul { display: block;}
+}
+
+.level2 .pageTitle_bg {
+	background-image: url(../img/top/bg_pagetitle.jpg);
+}
+.toLower_module-01 a {
+	background-image: url(../img/top/bg_lower3_01.jpg);
+}
+.toLower_module-02 a {
+	background-image: url(../img/top/bg_lower3_02.jpg);
+}
+.toLower_module-03 a {
+	background-image: url(../img/top/bg_lower3_03.jpg);
+}
+.research_outline {
+	background-color: #94CF4F;
+	color: #fff;
+	box-sizing: border-box;
+}
+.research_outline p {
+	line-height: 1.5;
+}
+.research_outline .research_outline_title {
+	font-weight: bold;
+	line-height: 1.1;
+}
+.research_outline_title span {
+	display: block;
+	line-height: 1;
+}
+.staff_title {
+	position: relative;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom: 1px solid #eee;
+}
+.staff_title_name {
+	color: #555;
+}
+.staff_copy {
+	color: #72ab2f;
+	line-height: 1.64;
+}
+.staff_title_01 {
+	background-image: url(../img/staff/staff01.jpg);
+}
+.staff_title_02 {
+	background-image: url(../img/staff/staff02.jpg);
+}
+.staff_title_03 {
+	background-image: url(../img/staff/staff03.jpg);
+}
+.staff_title_04 {
+	background-image: url(../img/staff/staff04.jpg);
+}
+.staff_title_05 {
+	background-image: url(../img/staff/staff05.jpg);
+}
+.staff_title_06 {
+	background-image: url(../img/staff/staff06.jpg);
+}
+.staff_wrap .staff_comment aside {
+	background-color: #EDF7E2;
+	line-height: 1.75;
+}
+.staff_wrap .staff_comment aside h2 {
+	color: #72ab2f;
+	line-height: 1.1;
+}
+.staff_wrap .staff_schedule {
+	border: 1px solid #84c636;
+	box-sizing: border-box;
+}
+.staff_wrap .staff_schedule h2 {
+	text-align: center;
+	color: #72ab2f;
+	line-height: 1.1;
+}
+.staff_wrap .staff_schedule ol {
+	position: relative;
+}
+.staff_wrap .staff_schedule ol::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 2px;
+	height: 100%;
+	background: #84C636;
+	z-index: 1;
+}
+.staff_wrap .staff_schedule ol li {
+	position: relative;
+	z-index: 2;
+	line-height: 1.3;
+}
+.staff_wrap .staff_schedule ol li span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 4em;
+	text-align: center;
+	background-color: #fff;
+}
+
+@media screen and (min-width:768px) {
+.research_outline {
+	max-width: 600px;
+	margin: 0 auto 30px;
+	padding: 30px 40px;
+	font-size: 20px;
+}
+.research_outline .research_outline_title {
+	margin-bottom: 12px;
+	font-size: 28px;
+}
+.research_outline_title span {
+	font-size: 15px;
+}
+.staff_title {
+	height: 0;
+	padding-top: 29.16666666666667%;
+}
+.staff_title .staff_title_inner {
+	position: absolute;
+	top: 50%;
+	left: 8.25%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-size: 36px;
+}
+.staff_title_name {
+	margin-bottom: 30px;
+	font-size: 22px;
+}
+.staff_title_name span {
+	display: inline-block;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+.staff_wrap {
+	overflow: hidden;
+}
+.staff_wrap .staff_comment {
+	float: left;
+	width: 65%;
+}
+.staff_wrap .staff_comment .secTitle:not(:first-child) {
+	margin-top: 40px;
+}
+.staff_wrap .staff_comment aside {
+	margin-top: 70px;
+	padding: 34px 30px;
+}
+.staff_wrap .staff_comment aside h2 {
+	margin: -50px 0 24px -30px;
+	font-size: 26px;
+}
+.staff_wrap .staff_comment aside p {
+	margin-bottom: 0;
+}
+.staff_wrap .staff_schedule {
+	float: right;
+	width: 30%;
+	padding: 34px 20px;
+}
+.staff_wrap .staff_schedule h2 {
+	margin-bottom: 35px;
+	font-size: 22px;
+}
+.staff_wrap .staff_schedule ol {
+	margin-bottom: 30px;
+}
+.staff_wrap .staff_schedule ol::before {
+	left: 9.689922480620155%;
+}
+.staff_wrap .staff_schedule ol li {
+	padding-left: 4em;
+}
+.staff_wrap .staff_schedule ol li:not(:first-child) {
+	margin-top: 50px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.research_outline {
+	margin-bottom: 1.5rem;
+	padding: 1.5rem 2rem;
+	font-size: 1.4rem;
+}
+.research_outline .research_outline_title {
+	margin-bottom: 0.5em;
+	font-size: 1.8rem;
+}
+.research_outline_title span {
+	font-size: 0.8rem;
+}
+
+.staff_title .staff_title_inner {
+	padding: 1rem 40% 1rem 1rem;
+	font-size: 1.4rem;
+}
+.staff_title_name {
+	margin-bottom: 1.2em;
+	font-size: 1.2rem;
+}
+.staff_title_name span {
+	display: inline-block;
+	margin-bottom: 1rem;
+	font-size: 1rem;
+}
+.staff_wrap .staff_comment .secTitle:not(:first-child) {
+	margin-top: 9.375vw;
+}
+.staff_wrap .staff_comment aside {
+	margin: 4rem 0 1.5rem;
+	padding: 1.2rem;
+}
+.staff_wrap .staff_comment aside h2 {
+	margin: -2rem 0 1.5rem -1.2rem;
+	font-size: 1.6rem;
+}
+.staff_wrap .staff_comment aside p {
+	margin-bottom: 0;
+}
+.staff_wrap .staff_schedule {
+	padding: 1.5rem;
+	margin-bottom: 9.375vw;
+}
+.staff_wrap .staff_schedule h2 {
+	margin-bottom: 2rem;
+	font-size: 1.4rem;
+}
+.staff_wrap .staff_schedule ol {
+	margin-bottom: 1.4rem;
+}
+.staff_wrap .staff_schedule ol::before {
+	left: 2rem;
+}
+.staff_wrap .staff_schedule ol li {
+	padding-left: 4em;
+}
+.staff_wrap .staff_schedule ol li:not(:first-child) {
+	margin-top: 1.2rem;
+}
+}
+
+
+/* ------------------------ 
+
+topSlider
+
+------------------------ */
+.topSlider li > div {
+	position: relative;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+}
+.topSlider button.slick-arrow {
+	position: absolute;
+	padding: 0;
+	cursor: pointer;
+	color: transparent;
+	border: 0;
+	outline: none;
+	z-index: 10;
+}
+.topSlider button.slick-prev {
+	background: url(/img/arrow_prev.svg) 0 0 no-repeat;
+}
+.topSlider button.slick-next {
+	background: url(/img/arrow_next.svg) 0 0 no-repeat;
+}
+.slick-dots {
+	position: absolute;
+	display: block;
+	width: 100%;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	z-index: 10;
+}
+.slick-dots li {
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	cursor: pointer;
+}
+.slick-dots li button {
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	padding: 0;
+	cursor: pointer;
+	color: transparent;
+	border: 0;
+	border-radius: 50%;
+	outline: none;
+	background: #fff;
+}
+.slick-dots li.slick-active button {
+	background-color: #8CCB3E;
+}
+.pageTitleSlide_wrap {
+	text-align: center;
+	color: #fff;
+}
+
+.topSlider .bg01{
+	background: url(/research/img/top/bg_pagetitle01.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+
+.topSlider .bg02{
+	background: url(/research/img/top/bg_pagetitle02.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+
+@media screen and (min-width:768px) {
+.topSlider li > div.pageTitleSlide_wrap {
+	padding-top: 29.16666666666667%;
+}
+.topSlider li > div > div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	transform: translateY(-50%) translateX(-50%);
+}
+.topSlider button.slick-arrow {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 19px;
+	height: 33px;
+}
+.topSlider button.slick-prev {
+	left: 18px;
+	background-size: cover;
+}
+.topSlider button.slick-next {
+	right: 18px;
+	background-size: cover;
+}
+.slick-dots {
+	bottom: 29px;
+}
+.slick-dots li {
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+}
+.slick-dots li button {
+	width: 10px;
+	height: 10px;
+}
+.topSlider li > div.pageTitleSlide_wrap > div {
+	width: 700px;
+	font-size: 17px;
+	line-height: 1.765;
+}
+}
+
+@media screen and (max-width: 767px) {
+.topSlider li > div.pageTitleSlide_wrap {
+	padding-top: 54.6875vw;
+}
+.topSlider li > div > div {
+	display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+	margin: auto;
+}
+.topSlider button.slick-arrow {
+	top: 0;
+	width: 6.875vw;
+	height: 100%;
+	background-position: center center;
+}
+.topSlider button.slick-prev {
+	left: 0;
+	background-size: 3.125vw;
+}
+.topSlider button.slick-next {
+	right: 0;
+	background-size: 3.125vw;
+}
+.slick-dots {
+	bottom: 5.3125vw;
+}
+.slick-dots li {
+	width: 1.5625vw;
+	height: 1.5625vw;
+	margin: 0 0.78125vw;
+}
+.slick-dots li button {
+	width: 1.5625vw;
+	height: 1.5625vw;
+}
+.topSlider li > div.pageTitleSlide_wrap > div {
+	width: 84.375vw;
+	font-size: 1.1rem;
+	line-height: 1.8;
+}
+}
+
+
+/* ------------------------ 
+
+title
+
+------------------------ */
+@media screen and (max-width: 767px) {
+.level2 .pageTitle_wrap {
+	padding-top: 54.6875%;
+}
+}

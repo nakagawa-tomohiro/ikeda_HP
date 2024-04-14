@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+@media screen and (min-width: 1380px){
+.toLower_3.sizeS > li a {
+    padding: 5.222222222222222% 30.33333333333333% 5.222222222222222% 4%;
+}
+	
+.toLower_3.sizeS > li a .toLower_3_title {
+    font-size: 16px;
+}
+}
+@media screen and (max-width:1023px) {
+.gNav a[href^="/safety/"] + ul {
+	display: block;
+}
+}
+.level2 .pageTitle_bg {
+	background-image: url(../img/top/bg_pagetitle.jpg);
+}
+.toLower_module-01 a {
+	background-image: url(../img/top/bg_lower3_01.jpg);
+}
+.toLower_module-02 a {
+	background-image: url(../img/top/bg_lower3_02.jpg);
+}
+.toLower_module-03 a {
+	background-image: url(../img/top/bg_lower3_03.jpg);
+}
+.safe_circumstance {
+	width: 100%;
+}
+.safe_circumstance th, .safe_circumstance td {
+	border-bottom: 1px dotted #888;
+	box-sizing: border-box;
+}
+.safe_circumstance thead th {
+	color: #6d6657;
+	text-align: center;
+	font-weight: bold;
+	vertical-align: bottom;
+}
+.safe_circumstance tbody th {
+	width: 19%;
+	color: #72ab2f;
+	text-align: left;
+	font-weight: bold;
+}
+.safe_circumstance tbody td {
+	text-align: center;
+	width: 27%;
+}
+.safe_control > div.safe_control_txt {
+	position: relative;
+	border: 1px solid #84c636;
+	box-sizing: border-box;
+}
+.safe_control .safe_control_facility {
+	position: relative;
+}
+.safe_control .safe_control_facility::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 2px;
+	height: 100%;
+	background: #84C636;
+	z-index: 1;
+}
+.safe_control .safe_control_facility li {
+	position: relative;
+	background-color: #fff;
+	z-index: 2;
+	line-height: 1.625;
+}
+.safe_control .safe_control_facility li:first-child {
+	margin-top: 0;
+}
+.safe_control .safe_control_facility li span {
+	display: block;
+	color: #666;
+	line-height: 1.57;
+}
+
+.procedure_movie video {
+	width: 100%;
+}
+@media screen and (min-width:768px) {
+.safe_circumstance {
+	margin-top: 35px;
+	margin-bottom: 60px;
+}
+.safe_circumstance th, .safe_circumstance td {
+	padding: 23px 10px;
+}
+.safe_circumstance thead th {
+	padding: 10px;
+	font-size: 18px;
+}
+.safe_policy li {
+	margin-bottom: 35px;
+	font-size: 18px;
+}
+.safe_control {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.safe_control > div {
+	width: 33%;
+}
+.safe_control > div.safe_control_txt {
+	width: 28%;
+	padding: 19px;
+}
+.safe_control .safe_control_facility::before {
+	left: 16px;
+}
+.safe_control .safe_control_facility li {
+	margin-top: 50px;
+}
+.safe_control .safe_control_facility li span {
+	font-size: 15px;
+}
+.safe_control .safe_control_inspection {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 30px;
+	font-size: 18px;
+}
+.safe_control .safe_control_inspection li:not(:first-child) {
+	margin-top: 20px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.safe_circumstance_wrap {
+	position: relative;
+	overflow: auto;
+}
+.safe_circumstance {
+	margin-bottom: 1.5rem;
+	overflow: hidden;
+}
+.safe_circumstance tr, .safe_circumstance th, .safe_circumstance td {
+	display: block;
+	white-space: nowrap;
+	line-height: 3rem;
+}
+.safe_circumstance thead {
+	display: block;
+	float: left;
+}
+.safe_circumstance thead th {
+	font-size: 1.4rem;
+}
+.safe_circumstance tbody {
+	display: -webkit-box;
+	overflow-x: auto;
+}
+.safe_circumstance tbody th, .safe_circumstance tbody td {
+	width: 100%;
+}
+.safe_circumstance tbody th {
+	text-align: center;
+}
+.safe_circumstance thead th:nth-child(3), .safe_circumstance tbody tr td:nth-of-type(2) {
+	height: 5rem;
+}
+.safe_circumstance thead th:nth-child(3) {
+	padding-top: 1rem;
+	line-height: 1.2;
+	box-sizing: border-box;
+}
+.safe_circumstance tbody tr td:nth-of-type(2) {
+	line-height: 5rem;
+}
+.safe_policy li {
+	margin-bottom: 1em;
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+.safe_control {
+	margin-bottom: 1rem;
+}
+.safe_control > div {
+	margin-bottom: 1rem;
+}
+.safe_control > div.safe_control_txt {
+	padding: 1rem;
+}
+.safe_control .safe_control_facility::before {
+	left: 1em;
+}
+.safe_control .safe_control_facility li {
+	margin-top: 1.5rem;
+}
+.safe_control .safe_control_facility li span {
+	font-size: 15px;
+}
+}

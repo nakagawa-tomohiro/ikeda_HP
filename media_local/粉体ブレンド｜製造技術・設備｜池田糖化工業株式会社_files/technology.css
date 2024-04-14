@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width: 1023px) {
+.gNav a[href^="/technology/"] + ul { display: block;}
+}
+
+.level2 .pageTitle_bg {
+	background-image: url(../img/top/bg_pagetitle.jpg);
+}
+
+@media screen and (min-width:768px) {
+	.contWrap p.lead_technology {
+		font-size:24px;
+		margin-bottom: 0.5em;
+	}
+}
+@media screen and (max-width: 767px) {
+	.contWrap p.lead_technology {
+		font-size:1.5rem;
+	}
+}
+
+.tech_demand dt {
+	display: inline-block;
+	background-color: #F2F2F2;
+	color: #666;
+	line-height: 1.5;
+}
+.tech_demand dd {
+	line-height: 1.5;
+	color: #222;
+}
+
+@media screen and (min-width:768px) {
+.contWrap .tech_lead {
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+.tech_demand dt {
+	padding: 9px 15px;
+}
+.tech_demand dd {
+	padding: 9px 15px 9px 32px;
+	margin-bottom: 20px;
+	background-position: 0 0.7em;
+}
+.imgLeft .tech_demand {
+	margin-left: 20px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.contWrap .tech_lead {
+	margin-bottom: 0.5em;
+	font-size: 1.4rem;
+}
+.tech_demand dt {
+	padding: 0.4rem 1rem;
+}
+.tech_demand dd {
+	padding: 0.4rem 1rem 0.4rem 2rem;
+	margin-bottom: 1.2rem;
+	background-position: 0 0.7em;
+	background-size: 1rem;
+}
+}

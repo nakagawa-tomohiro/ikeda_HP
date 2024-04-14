@@ -1,0 +1,49 @@
+// JavaScript Document
+
+// matchHeight
+$(window).load(function() {
+	if($('.mh').length){
+	$('.mh').matchHeight();
+	}else{
+		
+	}
+});
+
+var $win = $(window);
+
+$win.on('load resize', function() {
+  var windowWidth = $win.width();
+
+  if (windowWidth > 1024) {
+    $(".gallery").colorbox({
+      opacity: 0.7
+    });
+    $(".single").colorbox({
+		  opacity: 0.7
+	  });
+  }else {
+    $(".gallery").colorbox({
+			maxWidth:"95%",
+			maxHeight:"95%",
+			opacity: 0.7
+  });
+  $(".single").colorbox({
+		maxWidth:"95%",
+		maxHeight:"95%",
+		opacity: 0.7
+	});
+  }
+});
+
+$('.mobile-trigger').on('click', function(e) {
+  e.preventDefault();
+     $("#menu-wrapper").toggleClass("current");
+    $(this).toggleClass("current");
+  $(this).next('.category-menu-primary').stop().fadeToggle();
+});
+
+$('.mobile-close').on('click', function(e) {
+    $("#menu-wrapper").toggleClass("current");
+    $('.mobile-trigger').toggleClass("current");
+    $('.mobile-trigger').next('.category-menu-primary').stop().fadeToggle();
+});

@@ -1,0 +1,13 @@
+$(function() {
+  $('.dropdown-title').on('click', function() {
+    if ($(this).hasClass('active')) {
+      // スマホ用メニューが表示されていたとき
+      $(this).removeClass('active');
+      $('.dropdown').removeClass('open');
+    } else {
+      // スマホ用メニューが非表示の時
+      $(this).addClass('active');
+      $('.dropdown').addClass('open');
+    }
+  });
+});
